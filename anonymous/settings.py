@@ -55,11 +55,17 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'anonymous.urls'
 
+# 정적 파일을 찾을 디렉토리 추가
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            'templates',
+           BASE_DIR / 'templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
