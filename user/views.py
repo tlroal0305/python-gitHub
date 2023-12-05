@@ -20,7 +20,7 @@ def singin(request):
        login(request, user)
        return redirect('board')
      else:
-       messages.error(request, "입력 값을 확인해주세요");
+       messages.error(request, "입력 값을 확인해주세요 !");
        return redirect('singin')
     
 
